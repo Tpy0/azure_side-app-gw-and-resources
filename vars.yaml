@@ -1,0 +1,20 @@
+gw_config:
+  gwr:
+    - bap_name: "s0bap-www-exampleapp-com"
+      frontend_port_name: "s0fep-www-some-exampleapp-com"
+      frontend_port: "80"
+      frontend_ip_name: local.frontend_ip_name
+      http_settings_name: local.http_settings_name
+      listener_name: "s0ln-www-exampleapp-com"
+      request_routing_rule_name: "s0rrrn-www-exampleapp-com"
+      ip_addresses: ["10.0.2.200"]
+      priority: "1"
+    - bap_name: "s0bap-www-exampleapp2-com"
+      frontend_port_name: "s0fep-www-some-exampleapp2-com"
+      frontend_port: "81"
+      frontend_ip_name: local.frontend_ip_name
+      http_settings_name: local.http_settings_name
+      listener_name: "s0ln-www-exampleapp2-com"
+      request_routing_rule_name: "s0rrrn-www-exampleapp2-com"
+      ip_addresses: ["10.0.2.201"]
+      priority: "2"
